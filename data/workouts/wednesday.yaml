@@ -3,36 +3,43 @@ subtitle: "Low fatigue"
 exercises:
   - id: "pogos"
     name: "Pogos (Ankle Hops)"
+    tracked: false
     description: "Small, quick jumps using mostly ankles. Think \"springy,\" not high."
     cue: ""
     youtube: "https://www.youtube.com/shorts/ztjByc9Afj4"
   - id: "box-jumps"
     name: "Box / Vertical Jumps"
+    tracked: false
     description: "Jump explosively with controlled landings."
     cue: "Jump fast, land quiet."
     youtube: "https://www.youtube.com/watch?v=52r_Ul5k03g"
   - id: "dumbbell-jump-shrugs"
     name: "Dumbbell Jump Shrugs"
+    tracked: true
     description: "Light dumbbell, jump fast while shrugging shoulders."
     cue: ""
     youtube: "https://www.youtube.com/watch?v=6TlbDQUWs0s"
   - id: "rotational-med-ball-throws"
     name: "Rotational Medicine Ball Throws"
+    tracked: true
     description: "From a kneeling position, rotate torso and throw sideways."
     cue: ""
     youtube: "https://www.youtube.com/watch?v=1YOjjTpeFEo"
   - id: "pallof-press"
     name: "Pallof Press"
+    tracked: true
     description: "Stand sideways to cable or band, press arms straight out without rotating."
     cue: "Don't let my body twist."
     youtube: "https://www.youtube.com/watch?v=PlpE9e5WjQ0"
   - id: "planks"
     name: "Planks"
+    tracked: false
     description: "Hold plank."
     cue: ""
     youtube: "https://www.youtube.com/watch?v=pSHjTRCQxIw"
   - id: "strap-traction"
     name: "Strap Traction / Hanging"
+    tracked: false
     description: "Light bodyweight traction to unload spine. No swinging."
     cue: ""
     youtube: "https://www.youtube.com/watch?v=O535Pxjix4I"

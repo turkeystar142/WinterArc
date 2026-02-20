@@ -201,8 +201,8 @@ a:hover { text-decoration: underline; }
   gap: 0.5rem;
   padding: 0.3rem 0.5rem;
   border-radius: 4px;
-  cursor: pointer;
   transition: background 0.15s;
+  flex-wrap: wrap;
 }
 
 .tracker-exercise:hover {
@@ -218,11 +218,46 @@ a:hover { text-decoration: underline; }
   opacity: 0.7;
 }
 
+.tracker-exercise-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  flex: 1;
+  min-width: 0;
+}
+
 .exercise-checkbox {
   width: 1.1rem;
   height: 1.1rem;
+  flex-shrink: 0;
   cursor: pointer;
   accent-color: var(--color-accent);
+}
+
+.tracker-inputs {
+  display: flex;
+  gap: 0.35rem;
+  margin-left: auto;
+}
+
+.exercise-weight,
+.exercise-rpe {
+  padding: 0.2rem 0.3rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.exercise-weight {
+  width: 6.5ch;
+}
+
+.exercise-rpe {
+  width: 6ch;
 }
 
 /* === Days List === */

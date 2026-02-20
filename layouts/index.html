@@ -22,12 +22,30 @@
         </h3>
         <div class="tracker-exercises">
           {{ range $workoutData.exercises }}
-            <label class="tracker-exercise">
-              <input type="checkbox" class="exercise-checkbox"
-                     data-day="{{ $dayKey }}"
-                     data-exercise="{{ .id }}">
-              <span class="exercise-name">{{ .name }}</span>
-            </label>
+            <div class="tracker-exercise">
+              <label class="tracker-exercise-label">
+                <input type="checkbox" class="exercise-checkbox"
+                       data-day="{{ $dayKey }}"
+                       data-exercise="{{ .id }}">
+                <span class="exercise-name">{{ .name }}</span>
+              </label>
+              {{ if .tracked }}
+                <div class="tracker-inputs">
+                  <select class="exercise-weight" data-day="{{ $dayKey }}" data-exercise="{{ .id }}">
+                    <option value="">kg</option>
+                    {{ range seq 0 200 }}
+                      <option value="{{ . }}">{{ . }}kg</option>
+                    {{ end }}
+                  </select>
+                  <select class="exercise-rpe" data-day="{{ $dayKey }}" data-exercise="{{ .id }}">
+                    <option value="">RPE</option>
+                    {{ range seq 1 10 }}
+                      <option value="{{ . }}">{{ . }}</option>
+                    {{ end }}
+                  </select>
+                </div>
+              {{ end }}
+            </div>
           {{ end }}
         </div>
       </div>

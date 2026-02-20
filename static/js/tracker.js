@@ -60,10 +60,12 @@
     return getJSON(KEYS.tracker(weekKey), {});
   }
 
-  function setExerciseState(weekKey, day, exerciseId, checked) {
+  function updateExercise(weekKey, day, exerciseId, field, value) {
     var state = getTrackerState(weekKey);
     if (!state[day]) state[day] = {};
-    state[day][exerciseId] = checked;
+    var entry = state[day][exerciseId] || {};
+    entry[field] = value;
+    state[day][exerciseId] = entry;
     setJSON(KEYS.tracker(weekKey), state);
   }
 
@@ -76,17 +78,49 @@
       weekLabel.textContent = 'Week: ' + weekKey;
     }
 
-    // Restore checkbox states and bind listeners
     var state = getTrackerState(weekKey);
+
+    // Restore checkbox states and bind listeners
     var checkboxes = document.querySelectorAll('.exercise-checkbox');
     checkboxes.forEach(function (cb) {
       var day = cb.dataset.day;
       var exercise = cb.dataset.exercise;
-      if (state[day] && state[day][exercise]) {
+      var entry = state[day] && state[day][exercise];
+      if (entry && entry.done) {
         cb.checked = true;
       }
       cb.addEventListener('change', function () {
-        setExerciseState(weekKey, day, exercise, cb.checked);
+        updateExercise(weekKey, day, exercise, 'done', cb.checked);
+      });
+    });
+
+    // Restore weight selects and bind listeners
+    var weightSelects = document.querySelectorAll('.exercise-weight');
+    weightSelects.forEach(function (sel) {
+      var day = sel.dataset.day;
+      var exercise = sel.dataset.exercise;
+      var entry = state[day] && state[day][exercise];
+      if (entry && entry.weight !== undefined && entry.weight !== '') {
+        sel.value = String(entry.weight);
+      }
+      sel.addEventListener('change', function () {
+        var val = sel.value === '' ? '' : Number(sel.value);
+        updateExercise(weekKey, day, exercise, 'weight', val);
+      });
+    });
+
+    // Restore RPE selects and bind listeners
+    var rpeSelects = document.querySelectorAll('.exercise-rpe');
+    rpeSelects.forEach(function (sel) {
+      var day = sel.dataset.day;
+      var exercise = sel.dataset.exercise;
+      var entry = state[day] && state[day][exercise];
+      if (entry && entry.rpe !== undefined && entry.rpe !== '') {
+        sel.value = String(entry.rpe);
+      }
+      sel.addEventListener('change', function () {
+        var val = sel.value === '' ? '' : Number(sel.value);
+        updateExercise(weekKey, day, exercise, 'rpe', val);
       });
     });
 
@@ -138,8 +172,21 @@
         hasAny = true;
         text += '  ' + day.charAt(0).toUpperCase() + day.slice(1) + ':\n';
         Object.keys(data[day]).forEach(function (ex) {
-          var mark = data[day][ex] ? '[x]' : '[ ]';
-          text += '    ' + mark + ' ' + ex.replace(/-/g, ' ') + '\n';
+          var entry = data[day][ex];
+          var mark = entry.done ? '[x]' : '[ ]';
+          var label = ex.replace(/-/g, ' ');
+          var details = '';
+          if (entry.weight !== undefined && entry.weight !== '') {
+            details += entry.weight + 'kg';
+          }
+          if (entry.rpe !== undefined && entry.rpe !== '') {
+            details += (details ? ' @ ' : '') + 'RPE ' + entry.rpe;
+          }
+          if (details) {
+            text += '    ' + mark + ' ' + label + ' — ' + details + '\n';
+          } else {
+            text += '    ' + mark + ' ' + label + '\n';
+          }
         });
       }
     });
