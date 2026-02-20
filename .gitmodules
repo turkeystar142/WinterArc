@@ -1,0 +1,3 @@
+[submodule "themes/gymbros"]
+	path = themes/gymbros
+	url = https://github.com/turkeystar142/gymbros.git
