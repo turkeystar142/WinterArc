@@ -1,0 +1,5 @@
+name = "simpletheme"
+license = "MIT"
+homepage = "https://example.org/"
+description = "A minimal Hugo theme created for testing/layouts"
+tags = ["minimal", "starter"]

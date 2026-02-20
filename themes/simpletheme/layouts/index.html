@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <h2>{{ if .Site.Params.homeHeading }}{{ .Site.Params.homeHeading }}{{ else }}{{ .Site.Title }}{{ end }}</h2>
+  {{ if .Pages }}
+    <ul>
+      {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p>No pages yet.</p>
+  {{ end }}
+{{ end }}
