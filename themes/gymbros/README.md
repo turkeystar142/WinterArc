@@ -16,7 +16,7 @@ A retro pixel workout tracker theme for [Hugo](https://gohugo.io/). Track your w
 - Automatic dark mode via `prefers-color-scheme`
 - Silkscreen pixel font (loaded from Google Fonts)
 - Gradient border frames on tracker day cards and exercise cards
-- Responsive layout for mobile
+- Responsive layout for mobile devices
 
 ## Installation
 
