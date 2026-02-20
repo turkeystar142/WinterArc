@@ -1,0 +1,10 @@
+<article class="exercise-card" id="exercise-{{ .id }}">
+  <h3>{{ .name }}</h3>
+  <p class="exercise-desc">{{ .description }}</p>
+  {{ if and .cue (ne .cue "") }}
+    <blockquote class="exercise-cue">"{{ .cue }}"</blockquote>
+  {{ end }}
+  {{ if .youtube }}
+    {{ partial "youtube-embed.html" (dict "url" .youtube "name" .name) }}
+  {{ end }}
+</article>

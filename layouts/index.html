@@ -1,0 +1,36 @@
+{{ define "title" }}{{ .Site.Title }} — Weekly Tracker{{ end }}
+
+{{ define "main" }}
+  <div class="tracker-container">
+    <div class="tracker-header">
+      <h2>Weekly Tracker</h2>
+      <p class="week-label" id="week-label">Week: --</p>
+      <button id="export-btn" class="btn btn-export">Export Log</button>
+    </div>
+
+    {{ $days := slice "monday" "tuesday" "wednesday" "thursday" "friday" }}
+    {{ $dayLabels := slice "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" }}
+
+    {{ range $i, $dayKey := $days }}
+      {{ $workoutData := index site.Data.workouts $dayKey }}
+      {{ $label := index $dayLabels $i }}
+
+      <div class="tracker-day" data-day="{{ $dayKey }}">
+        <h3>
+          <a href="/days/{{ $dayKey }}/">{{ $label }}</a>
+          <span class="day-focus">{{ $workoutData.subtitle }}</span>
+        </h3>
+        <div class="tracker-exercises">
+          {{ range $workoutData.exercises }}
+            <label class="tracker-exercise">
+              <input type="checkbox" class="exercise-checkbox"
+                     data-day="{{ $dayKey }}"
+                     data-exercise="{{ .id }}">
+              <span class="exercise-name">{{ .name }}</span>
+            </label>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
