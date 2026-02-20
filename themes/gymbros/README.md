@@ -2,7 +2,10 @@
 
 A retro pixel workout tracker theme for [Hugo](https://gohugo.io/). Track your weekly exercises with checkboxes, weight (kg), and RPE selects — all stored in localStorage with automatic weekly archiving and text-file export.
 
-![Screenshot](images/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/turkeystar142/gymbros/main/images/home_darktheme.png)
+![Screenshot](https://raw.githubusercontent.com/turkeystar142/gymbros/main/images/day_darktheme.png)
+![Screenshot](https://raw.githubusercontent.com/turkeystar142/gymbros/main/images/day_mobile.png.png)
+![Screenshot](https://raw.githubusercontent.com/turkeystar142/gymbros/main/images/home_lighttheme.png)
 
 ## Features
 
