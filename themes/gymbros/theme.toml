@@ -1,5 +1,12 @@
 name = "gymbros"
 license = "MIT"
-homepage = "https://example.org/"
-description = "Retro pixel workout tracker theme"
-tags = ["fitness", "retro", "pixel"]
+licenselink = "https://github.com/turkeystar142/gymbros/blob/main/LICENSE"
+description = "Retro pixel workout tracker theme for Hugo"
+homepage = "https://github.com/turkeystar142/gymbros"
+tags = ["fitness", "retro", "pixel", "tracker"]
+features = ["dark-mode", "responsive", "localStorage", "workout-tracker"]
+min_version = "0.128.0"
+
+[author]
+  name = "turkeystar142"
+  homepage = "https://github.com/turkeystar142"

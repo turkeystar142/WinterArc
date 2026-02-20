@@ -1,0 +1,37 @@
+baseURL = 'https://example.com/'
+languageCode = 'en-us'
+title = 'Winter Arc'
+theme = 'gymbros'
+
+[params]
+  description = 'Weekly Workout Tracker'
+
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 1
+
+[[menu.main]]
+  name = 'Monday'
+  url = '/days/monday/'
+  weight = 2
+
+[[menu.main]]
+  name = 'Tuesday'
+  url = '/days/tuesday/'
+  weight = 3
+
+[[menu.main]]
+  name = 'Wednesday'
+  url = '/days/wednesday/'
+  weight = 4
+
+[[menu.main]]
+  name = 'Thursday'
+  url = '/days/thursday/'
+  weight = 5
+
+[[menu.main]]
+  name = 'Friday'
+  url = '/days/friday/'
+  weight = 6

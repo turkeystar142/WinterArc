@@ -1,0 +1,39 @@
+title: "Monday — Lower Body"
+subtitle: "Focus: legs + stability"
+exercises:
+  - id: "box-jumps"
+    name: "Box / Vertical Jumps"
+    tracked: false
+    description: "Stand tall, dip slightly, jump as high as possible. Land softly with bent knees."
+    cue: "Jump fast, land quiet."
+    youtube: "https://www.youtube.com/watch?v=52r_Ul5k03g"
+  - id: "back-squat"
+    name: "Back Squat"
+    tracked: true
+    description: "Bar on upper back, sit down between your hips, stand back up under control. 5 rep lower, 3 rep mid, then 1 rep topset. Don't forget a backoff set 3 reps that's 82% of topset that day."
+    cue: "Sit between my hips and stand tall."
+    youtube: "https://www.youtube.com/watch?v=SW_C1A-rejs"
+  - id: "bulgarian-split-squat"
+    name: "Bulgarian Split Squat"
+    tracked: true
+    description: "One foot behind you on a bench, squat down on the front leg."
+    cue: "Front leg works, back leg just helps."
+    youtube: "https://www.youtube.com/watch?v=96Af432wdF4"
+  - id: "front-foot-elevated-split-squat"
+    name: "Front-Foot-Elevated Split Squat"
+    tracked: true
+    description: "Front foot on a small platform, drop back knee toward floor."
+    cue: "Front leg works, back leg just helps."
+    youtube: "https://www.youtube.com/watch?v=OFmW8Re5Zos"
+  - id: "tibialis-raises"
+    name: "Tibialis Raises"
+    tracked: false
+    description: "Lean against wall or use tib bar, lift toes toward shins."
+    cue: ""
+    youtube: "https://www.youtube.com/watch?v=gNS_QjGAs_k"
+  - id: "bent-knee-calf-raises"
+    name: "Bent-Knee Calf Raises"
+    tracked: false
+    description: "Rise onto balls of feet with knees bent."
+    cue: ""
+    youtube: "https://www.youtube.com/watch?v=YMmgqO8Jo-k"
