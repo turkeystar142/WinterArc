@@ -1,0 +1,5 @@
+name = "gymbros"
+license = "MIT"
+homepage = "https://example.org/"
+description = "Retro pixel workout tracker theme"
+tags = ["fitness", "retro", "pixel"]

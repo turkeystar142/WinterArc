@@ -1,14 +1,24 @@
 /* === Variables & Base === */
 :root {
   color-scheme: light dark;
+
+  /* Palette */
+  --color-coral: #ff616b;
+  --color-yellow: #ffb852;
+  --color-mint: #b5ffc2;
+  --color-teal: #80ffcc;
+
+  /* Functional */
   --color-bg: #ffffff;
   --color-text: #222222;
   --color-text-muted: #666666;
-  --color-link: #0366d6;
+  --color-link: #ff616b;
   --color-border: #e1e4e8;
   --color-card-bg: #f6f8fa;
-  --color-accent: #2ea44f;
-  --color-checked: #d4edda;
+  --color-accent: #ff616b;
+  --color-checked: #d9ffe0;
+
+  --gradient-border: linear-gradient(135deg, #ff616b, #ffb852, #b5ffc2, #80ffcc);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,24 +26,31 @@
     --color-bg: #1a1a2e;
     --color-text: #e0e0e0;
     --color-text-muted: #999999;
-    --color-link: #58a6ff;
+    --color-link: #ff8a92;
     --color-border: #30363d;
     --color-card-bg: #21213a;
-    --color-accent: #3fb950;
+    --color-accent: #ff616b;
     --color-checked: #1a3a2a;
+
+    --color-coral: #ff7a82;
+    --color-yellow: #ffc76e;
+    --color-mint: #8ae69b;
+    --color-teal: #5ce6b0;
+
+    --gradient-border: linear-gradient(135deg, #ff7a82, #ffc76e, #8ae69b, #5ce6b0);
   }
 }
 
 * { box-sizing: border-box; }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Silkscreen', cursive;
   max-width: 72ch;
   margin: 2rem auto;
   padding: 0 1rem;
   color: var(--color-text);
   background: var(--color-bg);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 a { color: var(--color-link); text-decoration: none; }
@@ -46,7 +63,7 @@ a:hover { text-decoration: underline; }
 }
 
 .site-header h1 a {
-  color: var(--color-text);
+  color: var(--color-coral);
 }
 
 .main-nav ul {
@@ -70,13 +87,13 @@ a:hover { text-decoration: underline; }
 
 .main-nav li a:hover {
   text-decoration: none;
-  border-color: var(--color-accent);
+  border-color: var(--color-coral);
 }
 
 .main-nav li.active a {
-  background: var(--color-accent);
+  background: var(--color-coral);
   color: #fff;
-  border-color: var(--color-accent);
+  border-color: var(--color-coral);
 }
 
 /* === Day Page === */
@@ -89,18 +106,29 @@ a:hover { text-decoration: underline; }
   margin-bottom: 1.5rem;
 }
 
-/* === Exercise Cards === */
+/* === Exercise Cards (Day Pages) === */
 .exercise-card {
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
+  position: relative;
+  border: none;
+  border-radius: 10px;
   padding: 1.25rem;
   margin-bottom: 1.5rem;
   background: var(--color-card-bg);
 }
 
+.exercise-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 12px;
+  background: var(--gradient-border);
+  z-index: -1;
+}
+
 .exercise-card h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.15rem;
+  color: var(--color-coral);
 }
 
 .exercise-desc {
@@ -108,7 +136,7 @@ a:hover { text-decoration: underline; }
 }
 
 .exercise-cue {
-  border-left: 3px solid var(--color-accent);
+  border-left: 3px solid var(--color-yellow);
   padding-left: 0.75rem;
   margin: 0.75rem 0;
   font-style: italic;
@@ -143,7 +171,10 @@ a:hover { text-decoration: underline; }
   margin-bottom: 1.5rem;
 }
 
-.tracker-header h2 { margin: 0; }
+.tracker-header h2 {
+  margin: 0;
+  color: var(--color-coral);
+}
 
 .week-label {
   font-size: 0.95rem;
@@ -154,23 +185,36 @@ a:hover { text-decoration: underline; }
 .btn-export {
   margin-left: auto;
   padding: 0.5rem 1rem;
-  background: var(--color-accent);
+  background: var(--color-coral);
   color: #fff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 0.9rem;
+  font-family: 'Silkscreen', cursive;
 }
 
 .btn-export:hover {
   opacity: 0.9;
 }
 
+/* === Tracker Day Cards === */
 .tracker-day {
+  position: relative;
   margin-bottom: 1.25rem;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border: none;
+  border-radius: 10px;
   padding: 1rem;
+  background: var(--color-card-bg);
+}
+
+.tracker-day::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 12px;
+  background: var(--gradient-border);
+  z-index: -1;
 }
 
 .tracker-day h3 {
@@ -180,6 +224,11 @@ a:hover { text-decoration: underline; }
 
 .tracker-day h3 a {
   color: var(--color-text);
+}
+
+.tracker-day h3 a:hover {
+  color: var(--color-coral);
+  text-decoration: none;
 }
 
 .day-focus {
@@ -206,7 +255,7 @@ a:hover { text-decoration: underline; }
 }
 
 .tracker-exercise:hover {
-  background: var(--color-card-bg);
+  background: rgba(255, 97, 107, 0.06);
 }
 
 .tracker-exercise:has(input:checked) {
@@ -232,7 +281,7 @@ a:hover { text-decoration: underline; }
   height: 1.1rem;
   flex-shrink: 0;
   cursor: pointer;
-  accent-color: var(--color-accent);
+  accent-color: var(--color-coral);
 }
 
 .tracker-inputs {
@@ -249,6 +298,7 @@ a:hover { text-decoration: underline; }
   background: var(--color-bg);
   color: var(--color-text);
   font-size: 0.8rem;
+  font-family: 'Silkscreen', cursive;
   cursor: pointer;
 }
 
@@ -280,7 +330,7 @@ a:hover { text-decoration: underline; }
 
 .day-list li a:hover {
   text-decoration: none;
-  border-color: var(--color-accent);
+  border-color: var(--color-coral);
 }
 
 /* === Footer === */
