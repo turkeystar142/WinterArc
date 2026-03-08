@@ -71,11 +71,14 @@
 
 .record-rpe {
   font-size: 0.85rem;
-  color: var(--color-text-muted);
+  color: var(--color-text);
   padding: 0.15rem 0.5rem;
-  border: 1px solid var(--color-border);
   border-radius: 4px;
-  background: var(--color-bg);
+}
+
+.record-lbs {
+  font-size: 0.85rem;
+  color: var(--color-accent);
 }
 
 .record-none {

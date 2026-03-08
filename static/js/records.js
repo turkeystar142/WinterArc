@@ -86,12 +86,14 @@
       if (record) {
         hasAny = true;
         var rpeText = record.rpe !== null ? 'RPE ' + record.rpe : '';
+        var lbs = Math.round(record.weight * 2.20462 * 10) / 10;
         card.innerHTML =
           '<div class="record-info">' +
             '<span class="record-name">' + ex.name + '</span>' +
             '<div class="record-stats">' +
               '<span class="record-weight">' + record.weight + 'kg</span>' +
               (rpeText ? '<span class="record-rpe">' + rpeText + '</span>' : '') +
+              '<span class="record-lbs">' + lbs + 'lbs</span>' +
             '</div>' +
           '</div>';
       } else {
