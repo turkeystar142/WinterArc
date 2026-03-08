@@ -1,0 +1,34 @@
+{{ define "title" }}{{ .Site.Title }} — Personal Records{{ end }}
+
+{{ define "main" }}
+  <div class="records-container">
+    <div class="records-header">
+      <h2>Personal Records</h2>
+      <p class="records-subtitle">Your all-time bests across every tracked exercise.</p>
+    </div>
+
+    <p class="records-empty" id="records-empty">No records yet — start logging!</p>
+
+    <div id="records-list" class="records-list"></div>
+  </div>
+
+  {{/* Build deduplicated list of tracked exercises */}}
+  {{ $seen := slice }}
+  {{ $exercises := slice }}
+  {{ $days := slice "monday" "tuesday" "wednesday" "thursday" "friday" }}
+  {{ range $day := $days }}
+    {{ $workoutData := index site.Data.workouts $day }}
+    {{ range $workoutData.exercises }}
+      {{ if .tracked }}
+        {{ if not (in $seen .id) }}
+          {{ $seen = $seen | append .id }}
+          {{ $exercises = $exercises | append (dict "id" .id "name" .name) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <script type="application/json" id="exercise-meta">
+    {{ $exercises | jsonify | safeJS }}
+  </script>
+{{ end }}

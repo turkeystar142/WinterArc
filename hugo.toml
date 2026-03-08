@@ -35,3 +35,8 @@ theme = 'gymbros'
   name = 'Friday'
   url = '/days/friday/'
   weight = 6
+
+[[menu.main]]
+  name = 'Records'
+  url = '/records/'
+  weight = 7
