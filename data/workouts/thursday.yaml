@@ -6,28 +6,28 @@ exercises:
     tracked: true
     description: "Front foot elevated, drop back knee toward floor."
     cue: "Front leg works, back leg just helps."
-    youtube: "https://www.youtube.com/watch?v=OFmW8Re5Zos"
+    youtube: "https://images.squarespace-cdn.com/content/v1/5e4d6f65b48f984d6ee476fd/1615223536005-QF6EPAV91FSSHZOIOGTC/Coach+Camm+Split+Squat"
   - id: "reverse-nordic"
     name: "Reverse Nordic"
     tracked: false
     description: "Kneel upright, slowly lean back keeping hips extended."
     cue: ""
-    youtube: "https://www.youtube.com/shorts/efvU8PmaeC8"
+    youtube: "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2025/06/reverse-nordic.gif?resize=700%2C700&ssl=1"
   - id: "nordic-hamstring-curl"
     name: "Nordic Hamstring Curl"
     tracked: false
     description: "Kneel with ankles anchored, slowly lower chest toward floor."
     cue: "Slow down, catch myself."
-    youtube: "https://www.youtube.com/watch?v=kjv4WQXWl_A"
+    youtube: "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2024/05/nordic-hamstrings-eccentric.gif?fit=600%2C600&ssl=1"
   - id: "seated-dumbbell-overhead-press"
     name: "Seated Dumbbell Overhead Press"
     tracked: true
     description: "Sit upright and press dumbbells overhead."
     cue: ""
-    youtube: "https://www.youtube.com/watch?v=qEwKCR5JCog"
+    youtube: "https://www.strengthlog.com/wp-content/uploads/2020/11/Seated-dumbbell-shoulder-press.gif"
   - id: "side-plank-copenhagen"
     name: "Side Plank / Copenhagen Plank"
     tracked: false
     description: "Hold side-lying plank, optionally with top leg supported."
     cue: ""
-    youtube: "https://www.youtube.com/shorts/BFOyHDlY2UE"
+    youtube: "https://media.post.rvohealth.io/wp-content/uploads/sites/2/2020/06/1.1.SidePlank.gif"
