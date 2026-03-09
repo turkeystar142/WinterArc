@@ -27,7 +27,7 @@ exercises:
     youtube: "https://gymvisual.com/img/p/3/6/0/7/1/36071.gif"
   - id: "bent-knee-calf-raises"
     name: "Bent-Knee Calf Raises"
-    tracked: false
+    tracked: true
     description: "Rise onto balls of feet with knees bent."
     cue: ""
     youtube: "https://gymvisual.com/img/p/3/6/5/3/0/36530.gif"

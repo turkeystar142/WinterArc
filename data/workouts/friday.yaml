@@ -21,7 +21,7 @@ exercises:
     youtube: "https://newlife.com.cy/wp-content/uploads/2019/11/01251301-Barbell-Wrist-Curl-II_Forearms_360.gif"
   - id: "romanian-dead-lift"
     name: "Romanian Dead Lift"
-    tracked: false
+    tracked: true
     description: "Hold a barbell at hip height, hinge at the hips and lower the bar along your legs while keeping a slight knee bend and flat back."
     cue: "Push hips back, bar stays close to legs."
     youtube: "https://i.makeagif.com/media/2-07-2022/aUcALq.gif"
