@@ -1,0 +1,63 @@
+title: "Stretches"
+subtitle: "Mobility & flexibility routine"
+exercises:
+  - id: "cat-cow-stretch"
+    name: "Cat-Cow Stretch"
+    tracked: false
+    description: "On hands and knees, slowly alternate between arching your back upward and dropping your belly while lifting your chest, moving smoothly through the spine."
+    cue: ""
+    youtube: "https://media.tenor.com/LPwFzdwK9AEAAAAM/cat-cow-stretch.gif"
+  - id: "downward-dog"
+    name: "Downward Dog"
+    tracked: false
+    description: "From hands and feet on the floor, lift your hips high to form an inverted \"V,\" pressing your hands into the ground while lengthening your spine and legs."
+    cue: ""
+    youtube: ""
+  - id: "worlds-greatest-stretch"
+    name: "World's Greatest Stretch"
+    tracked: false
+    description: "Step one foot forward into a deep lunge, place both hands on the floor, then rotate your torso and reach one arm toward the ceiling."
+    cue: ""
+    youtube: ""
+  - id: "deep-squat-hold"
+    name: "Deep Squat Hold"
+    tracked: false
+    description: "Stand with feet shoulder-width apart, sink into the deepest squat you can maintain while keeping your chest tall and gently pushing your knees outward."
+    cue: ""
+    youtube: ""
+  - id: "hip-flexor-stretch"
+    name: "Hip Flexor Stretch"
+    tracked: false
+    description: "Step one foot forward into a lunge position and gently push your hips forward while keeping your torso upright to stretch the rear hip."
+    cue: ""
+    youtube: ""
+  - id: "90-90-hip-stretch"
+    name: "90/90 Hip Stretch"
+    tracked: false
+    description: "Sit with both knees bent at 90 degrees—one leg in front and one to the side—then lean forward slightly to feel a stretch in the hips."
+    cue: ""
+    youtube: ""
+  - id: "bird-dog"
+    name: "Bird Dog"
+    tracked: false
+    description: "On hands and knees, extend the opposite arm and leg straight out while keeping your hips and spine stable."
+    cue: ""
+    youtube: ""
+  - id: "glute-bridge"
+    name: "Glute Bridge"
+    tracked: false
+    description: "Lie on your back with knees bent and feet on the floor, then drive through your heels to lift your hips until your body forms a straight line from shoulders to knees."
+    cue: ""
+    youtube: ""
+  - id: "arm-circles"
+    name: "Arm Circles"
+    tracked: false
+    description: "Extend your arms out to the sides and make controlled circular motions forward and backward to warm up the shoulders."
+    cue: ""
+    youtube: ""
+  - id: "childs-pose"
+    name: "Child's Pose"
+    tracked: false
+    description: "Kneel on the floor, sit your hips back toward your heels, and stretch your arms forward while lowering your chest toward the ground."
+    cue: ""
+    youtube: ""

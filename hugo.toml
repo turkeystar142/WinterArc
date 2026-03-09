@@ -37,6 +37,11 @@ theme = 'gymbros'
   weight = 6
 
 [[menu.main]]
+  name = 'Stretches'
+  url = '/days/stretches/'
+  weight = 7
+
+[[menu.main]]
   name = 'Records'
   url = '/records/'
-  weight = 7
+  weight = 8

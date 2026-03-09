@@ -19,12 +19,6 @@ exercises:
     description: "One foot behind you on a bench, squat down on the front leg."
     cue: "Front leg works, back leg just helps."
     youtube: "https://www.youtube.com/watch?v=96Af432wdF4"
-  - id: "front-foot-elevated-split-squat"
-    name: "Front-Foot-Elevated Split Squat"
-    tracked: true
-    description: "Front foot on a small platform, drop back knee toward floor."
-    cue: "Front leg works, back leg just helps."
-    youtube: "https://www.youtube.com/watch?v=OFmW8Re5Zos"
   - id: "tibialis-raises"
     name: "Tibialis Raises"
     tracked: false

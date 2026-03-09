@@ -25,12 +25,12 @@ exercises:
     description: "From a kneeling position, rotate torso and throw sideways."
     cue: ""
     youtube: "https://www.youtube.com/watch?v=1YOjjTpeFEo"
-  - id: "pallof-press"
-    name: "Pallof Press"
-    tracked: true
-    description: "Stand sideways to cable or band, press arms straight out without rotating."
-    cue: "Don't let my body twist."
-    youtube: "https://www.youtube.com/watch?v=PlpE9e5WjQ0"
+  - id: "dead-bug"
+    name: "Dead Bug"
+    tracked: false
+    description: "Lie on your back with arms extended toward the ceiling and knees bent at 90 degrees. Slowly lower the opposite arm and leg toward the floor while keeping your lower back pressed into the ground."
+    cue: "Keep lower back flat on the floor."
+    youtube: ""
   - id: "planks"
     name: "Planks"
     tracked: false
