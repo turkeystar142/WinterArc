@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://winterarc.nuna.moe/'
 languageCode = 'en-us'
 title = 'Winter Arc'
 theme = 'gymbros'
