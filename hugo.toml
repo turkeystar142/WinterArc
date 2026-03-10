@@ -45,3 +45,8 @@ theme = 'gymbros'
   name = 'Records'
   url = '/records/'
   weight = 8
+
+[[menu.main]]
+  name = 'Progress'
+  url = '/progress/'
+  weight = 9

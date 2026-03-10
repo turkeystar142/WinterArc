@@ -1,0 +1,83 @@
+/* === Progress Page === */
+.progress-header {
+  margin-bottom: 1.5rem;
+}
+
+.progress-header h2 {
+  margin: 0 0 0.25rem 0;
+  color: var(--color-coral);
+}
+
+.progress-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.progress-empty {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.progress-charts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.progress-card {
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  background: var(--color-card-bg);
+}
+
+.progress-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 12px;
+  background: var(--gradient-border);
+  z-index: -1;
+}
+
+.progress-card-title {
+  font-size: 1rem;
+  margin: 0 0 0.75rem 0;
+  color: var(--color-text);
+}
+
+.progress-card canvas {
+  width: 100% !important;
+  max-height: 250px;
+}
+
+.progress-card-empty {
+  color: var(--color-text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+
+.progress-legend {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.progress-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.progress-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
